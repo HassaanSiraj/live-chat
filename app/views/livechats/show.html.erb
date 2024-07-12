@@ -1,0 +1,10 @@
+<p style="color: green"><%= notice %></p>
+
+<%= render @livechat %>
+
+<div>
+  <%= link_to "Edit this livechat", edit_livechat_path(@livechat) %> |
+  <%= link_to "Back to livechats", livechats_path %>
+
+  <%= button_to "Destroy this livechat", @livechat, method: :delete %>
+</div>

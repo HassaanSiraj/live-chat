@@ -1,0 +1,14 @@
+<p style="color: green"><%= notice %></p>
+
+<h1>Livechats</h1>
+
+<div id="livechats">
+  <% @livechats.each do |livechat| %>
+    <%= render livechat %>
+    <p>
+      <%= link_to "Show this livechat", livechat %>
+    </p>
+  <% end %>
+</div>
+
+<%= link_to "New livechat", new_livechat_path %>

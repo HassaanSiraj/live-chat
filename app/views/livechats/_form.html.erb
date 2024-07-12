@@ -1,0 +1,22 @@
+<%= form_with(model: livechat) do |form| %>
+  <% if livechat.errors.any? %>
+    <div style="color: red">
+      <h2><%= pluralize(livechat.errors.count, "error") %> prohibited this livechat from being saved:</h2>
+
+      <ul>
+        <% livechat.errors.each do |error| %>
+          <li><%= error.full_message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div>
+    <%= form.label :inbox, style: "display: block" %>
+    <%= form.text_field :inbox %>
+  </div>
+
+  <div>
+    <%= form.submit %>
+  </div>
+<% end %>
