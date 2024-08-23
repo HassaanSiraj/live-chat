@@ -1,2 +1,0 @@
-class Livechat < ApplicationRecord
-end
